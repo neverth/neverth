@@ -1,5 +1,5 @@
 # Hi there 👋
-Hi，我是 NeverTh, 无业游民！
+Hi，我是 NeverTh, 无业游民！博客内容通过 <a href="https://github.com/neverth/neverth/actions" target="_blank">neverth/actions</a> 自动更新
 
 <table>
 <tr>
