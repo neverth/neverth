@@ -3,7 +3,7 @@ Hi，我是 NeverTh，
 
 <table>
 <tr>
-<td valign="top" width="50%">
+<td valign="top" width="60%">
   
 #### 🐢 <a href="https://github.com/neverth" target="_blank">Recent Blog</a>
 * <a href='http://www.cnblogs.com/neverth/p/11874458.html' target='_blank'>JVM原理速记复习Java虚拟机总结思维导图面试必备</a> - 2019-11-16
@@ -16,7 +16,7 @@ Hi，我是 NeverTh，
 
 </td>
 
-<td valign="top" width="50%">
+<td valign="top" width="40%">
   
 #### ✨ <a href="https://github.com/neverth" target="_blank">My wish</a>
 <img src='https://images.cnblogs.com/cnblogs_com/neverth/1813018/o_2007240513492018022511492424.gif' alt='给个offer吧' width="200"/>
