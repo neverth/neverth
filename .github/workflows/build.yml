@@ -1,47 +1,46 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Build README
 
 on:
   push:
-  pull_request:
+  workflow_dispatch:
   schedule:
     - cron:  '0 0 * * *'
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v2
+    - name: Check out repo
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
 
-      - uses: actions/cache@v2
-        name: Configure pip caching
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+    - uses: actions/cache@v2
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install -r requirements.txt
+    - name: Install Python dependencies
+      run: |
+        python -m pip install -r requirements.txt
 
-      - name: Update README
-        run: |-
-          python build_readme.py
-          cat README.md
+    - name: Update README
+      run: |-
+        python build_readme.py
+        cat README.md
 
-      - name: Commit and push if changed
-        run: |-
-          git diff
-          git config --global user.email "neverth0@foxmail.com"
-          git config --global user.name "NeverTh-bot"
-          git pull
-          git add -A
-          git commit -m "自动化更新readme" || exit 0
-          git push
+    - name: Commit and push if changed
+      run: |-
+        git diff
+        git config --global user.email "neverth0@foxmail.com"
+        git config --global user.name "neverth-bot"
+        git pull
+        git add -A
+        git commit -m "自动化更新内容" || exit 0
+        git push
