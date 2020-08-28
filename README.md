@@ -19,7 +19,7 @@ Hi，我是 NeverTh, 苦逼实习生！博客内容通过 <a href="https://githu
 <td valign="top" width="40%">
   
 #### ✨ <a href="https://github.com/neverth" target="_blank">Wish at this time</a>
-<img src='./img/please_offer.gif' alt='给个offer吧' width="220"/>
+<img src='https://images.cnblogs.com/cnblogs_com/neverth/1813018/o_2007240513492018022511492424.gif' alt='给个offer吧' width="220"/>
 
 </td>
 </tr>
